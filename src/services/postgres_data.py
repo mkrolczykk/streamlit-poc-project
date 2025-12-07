@@ -16,8 +16,13 @@ class PostgresDataProvider(DataProvider):
         country, approach, stage, candidate_count
         """
         query = """
-        SELECT country as "Country", approach as "Approach", stage as "Stage", candidate_count as "Candidates"
-        FROM vaccine_candidates
+            SELECT
+                country AS "Country",
+                approach AS "Approach",
+                stage AS "Stage",
+                candidate_count AS "Candidates"
+            FROM
+                vaccine_candidates
         """
         try:
             return pd.read_sql(query, self.engine)

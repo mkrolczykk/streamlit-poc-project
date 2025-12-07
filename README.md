@@ -20,18 +20,18 @@
 ### Project structure
 ```
 src/
-├── main.py              # main script
-├── config.py            # app configs
+├── main.py              # Main script
+├── config.py            # App configs
 ├── domain/
-│   └── models.py        # data models
+│   └── models.py        # Data models
 ├── services/
 │   ├── base_data.py     # Protocol definition
 │   ├── mock_data.py     # Mock data provider
 │   └── postgres_data.py # PostgreSQL data provider
 └── ui/
     ├── __init__.py      
-    ├── components.py    # chart components
-    ├── sidebar.py       # sidebar controls
+    ├── components.py    # Chart components
+    ├── sidebar.py       # Sidebar controls
     └── styles/          # CSS styles
         ├── __init__.py
         ├── themes.py
@@ -39,7 +39,7 @@ src/
 ```
 
 ### Requirements
-- Python 3.9.13
+- Python 3.9.XX (13 recommended)
 
 ### Start guide
 ```
