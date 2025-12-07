@@ -14,7 +14,7 @@
 
 #### Print/Save as PDF
 
-![docs/export-example.png](docs/export-example.png)
+![docs/export-as-pdf-example.png](docs/export-as-pdf-example.png)
 
 #### Mobile-Friendly design
 
