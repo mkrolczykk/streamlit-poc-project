@@ -1,0 +1,19 @@
+[server]
+headless = true
+address = "0.0.0.0"
+port = 8501
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# Default to dark theme
+primaryColor = "#ff4b4b"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#fafafa"
+
+[runner]
+magicEnabled = true
+fastReruns = true
