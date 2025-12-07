@@ -12,6 +12,13 @@
 #### Print/Save as PDF
 ![docs/export-example.png](docs/export-example.png)
 
+#### Mobile-Friendly design
+<div style="display: flex; gap: 10px;">
+  <img src="docs/mobile-friendly-1.png" width="30%">
+  <img src="docs/mobile-friendly-2.png" width="30%">
+  <img src="docs/mobile-friendly-3.png" width="30%">
+</div>
+
 ### Project structure
 ```
 src/
