@@ -33,6 +33,9 @@ src/
         └── style_manager.py
 ```
 
+### Requirements
+- Python 3.9.13
+
 ### Start guide
 ```
 pip install -r requirements.txt
