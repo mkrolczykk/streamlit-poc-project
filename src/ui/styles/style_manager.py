@@ -99,6 +99,13 @@ def _generate_theme_css(theme: "ThemeColors") -> str:
         color: #ff4b4b !important;
     }}
     
+    /* Sidebar Dividers */
+    [data-testid="stSidebar"] hr {{
+        border-color: {theme.border_color} !important;
+        background-color: {theme.border_color} !important;
+    }}
+
+    
     /* Headers in Main Area */
     h1, h2, h3, .chart-header {{
         color: {theme.header_color} !important;
