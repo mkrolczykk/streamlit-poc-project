@@ -175,6 +175,37 @@ st.markdown(f"""
             stroke: currentColor !important;
         }}
         
+        /* Light Theme ONLY: Force sidebar toggle icon visibility */
+        { '''[data-testid="collapsedControl"] span,
+        [data-testid="stSidebarCollapsedControl"] span,
+        button[kind="header"] span {
+            color: #31333F !important;
+        }
+        [data-testid="collapsedControl"]:hover span,
+        [data-testid="stSidebarCollapsedControl"]:hover span,
+        button[kind="header"]:hover span {
+            color: #ff4b4b !important;
+        }
+        /* Override dynamically generated Streamlit classes */
+        [data-testid="collapsedControl"] [class*="st-emotion-cache"],
+        [data-testid="stSidebarCollapsedControl"] [class*="st-emotion-cache"],
+        button[kind="header"] [class*="st-emotion-cache"] {
+            color: #31333F !important;
+        }
+        [data-testid="collapsedControl"]:hover [class*="st-emotion-cache"],
+        [data-testid="stSidebarCollapsedControl"]:hover [class*="st-emotion-cache"],
+        button[kind="header"]:hover [class*="st-emotion-cache"] {
+            color: #ff4b4b !important;
+        }''' if theme == "Light" else "" }
+        
+        /* Global override for header icons - force visibility based on theme */
+        header [class*="emotion-cache"] {{
+            color: { "#31333F" if theme == "Light" else "#fafafa" } !important;
+        }}
+        header:hover [class*="emotion-cache"] {{
+            color: { "#31333F" if theme == "Light" else "#fafafa" } !important;
+        }}
+        
         #MainMenu {{visibility: hidden;}}
         footer {{visibility: hidden;}}
 
